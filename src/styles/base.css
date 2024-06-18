@@ -14,7 +14,7 @@ html,
 body {
     font-family: "Quicksand", sans-serif;
     font-weight: 400;
-    @apply text-primary bg-light;
+    @apply text-primary;
     scroll-behavior: smooth;
 }
 
