@@ -1,0 +1,28 @@
+---
+import "../styles/base.css";
+import bg from '@assetsLocal/bg.svg';
+
+import Navbar from "@components/Navbar.astro";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Pozvánka na svadbu</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+	</head>
+	<body class=" bg-cover bg-no-repeat bg-center min-h-screen" style={{backgroundImage: `url('${bg.src}')`,}}>
+		<Navbar/>
+		<main class="content">
+			<slot />
+		</main>
+	</body>
+	<script src="../scripts/burger-menu.js"></script>
+</html>
