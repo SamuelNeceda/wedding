@@ -24,10 +24,10 @@ body {
 }
 
 .title {
-    @apply text-3xl xs:text-4xl s:text-5xl m:text-6xl l:text-7xl;
+    @apply text-4xl xs:text-5xl s:text-6xl m:text-7xl l:text-8xl;
 }
 
-h1 {
+h1, .big-text {
     @apply text-2xl xs:text-3xl s:text-4xl m:text-5xl l:text-6xl;
 }
 
@@ -35,7 +35,7 @@ h2 {
     @apply text-2xl s:text-3xl m:text-4xl l:text-5xl;
 }
 
-h3 {
+h3, .medium-text {
     @apply text-lg xs:text-xl s:text-2xl m:text-3xl l:text-4xl;
 }
 
