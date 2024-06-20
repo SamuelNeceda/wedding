@@ -1,0 +1,23 @@
+---
+import TimelineCardLeft from "./TimelineCardLeft.astro";
+import TimelineCardRight from "./TimelineCardRight.astro";
+---
+
+<div class="content mt-12">
+    <h1 class="text-center">Program</h1>
+    <!-- component -->
+    <div class="container mt-4">
+        <div class="flex flex-col md:grid grid-cols-9 mx-auto p-2" >
+            <TimelineCardLeft title="Svadobný obrad" subtitle="16:00, Kostol Kráľovnej pokoja" />
+            <TimelineCardRight title="Spoločné fotenie" subtitle="pred kostolom" />
+            <TimelineCardLeft title="Oslava (pre pozvaných)" subtitle="KD Barca" />
+            <TimelineCardRight title="Večera" subtitle="17:30" />
+            <TimelineCardLeft title="Krájanie torty" subtitle="21:00" />
+            <TimelineCardRight title="Kvíz" subtitle="23:00" />
+        </div>
+    </div>
+
+    <div class="text-sm w-max mx-auto italic mt-12">
+        Zmena programu vyhradená
+    </div>
+</div>

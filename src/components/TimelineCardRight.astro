@@ -1,0 +1,22 @@
+---
+interface Props {
+	title: string;
+    subtitle: string;
+}
+const {title, subtitle} = Astro.props;
+---
+
+<div class="flex md:contents">
+    <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+      <div class="h-full w-6 flex items-center justify-center">
+        <div class="h-full w-1 bg-secondary pointer-events-none"></div>
+      </div>
+      <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-secondary shadow"></div>
+    </div>
+    <div class="col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto">
+        <p class="leading-tight text-tint">
+            {subtitle}
+        </p>
+        <p class="medium-text font-medium">{title}</p>
+    </div>
+</div>
