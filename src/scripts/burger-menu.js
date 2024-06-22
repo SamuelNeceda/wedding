@@ -19,18 +19,22 @@ function scrollToSection(section) {
     window.location.href = section;
 };
 
-document.getElementById('services-btn').addEventListener('click', () => {
-    scrollToSection("#services");
+document.getElementById('program-btn').addEventListener('click', () => {
+    scrollToSection("#program");
 })
 
-document.getElementById('about-btn').addEventListener('click', () => {
-    scrollToSection("#about");
+document.getElementById('park-btn').addEventListener('click', () => {
+    scrollToSection("#park");
 })
 
-document.getElementById('projects-btn').addEventListener('click', () => {
-    scrollToSection("#projects");
+document.getElementById('gifts-btn').addEventListener('click', () => {
+    scrollToSection("#gifts");
 })
 
-document.getElementById('contact-btn').addEventListener('click', () => {
-    scrollToSection("#contact");
+document.getElementById('acc-btn').addEventListener('click', () => {
+    scrollToSection("#acc");
+})
+
+document.getElementById('rsvp-btn').addEventListener('click', () => {
+    scrollToSection("#rsvp");
 })
