@@ -31,10 +31,6 @@ document.getElementById('gifts-btn').addEventListener('click', () => {
     scrollToSection("#gifts");
 })
 
-document.getElementById('acc-btn').addEventListener('click', () => {
-    scrollToSection("#acc");
-})
-
 document.getElementById('rsvp-btn').addEventListener('click', () => {
     scrollToSection("#rsvp");
 })

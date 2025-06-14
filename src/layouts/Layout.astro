@@ -1,7 +1,7 @@
 ---
 import "../styles/base.css";
-import d1 from '@assetsLocal/decor1.svg';
-import d2 from '@assetsLocal/decor2.svg';
+import background from "@assetsLocal/background.svg";
+import topBottom from "@assetsLocal/top_bottom.png";
 
 import Navbar from "@components/Navbar.astro";
 import Footer from "@components/Footer.astro";
@@ -9,28 +9,43 @@ import Footer from "@components/Footer.astro";
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Svadobný web dvoch úžasných ľudí." />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/wedding/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Pozvánka na svadbu</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-	</head>
-	<body class="overflow-x-hidden relative">
-		<img src={d1.src} alt="" class="w-1/2 sm:w-1/3 md:w-1/4 fixed top-0 left-0 -translate-y-20 -translate-x-8 z-[-10]">
-		<Navbar/>
-		<main class="content min-h-[90vh] relative z-10 mb-20">
-			<slot />
-		</main>
-		<Footer/>
-		<img src={d2.src} alt="" class="w-2/3 sm:w-1/2 md:w-1/3 fixed bottom-0 right-0 translate-y-32 translate-x-8 z-[-10]">
-	</body>
-	
-	
-	<script src="../scripts/burger-menu.js"></script>
-	<script src="../scripts/timer.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Svadobný web dvoch úžasných ľudí." />
+    <meta name="viewport" content="width=device-width" />
+    
+    <!-- Favicon for general browsers -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/assets/favicon_io/favicon-16x16.png" />
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="/src/assets/favicon_io/apple-touch-icon.png" />
+    
+    <!-- Android Chrome Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/src/assets/favicon_io/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/src/assets/favicon_io/android-chrome-512x512.png" />
+    
+    <!-- Web Manifest -->
+    <link rel="manifest" href="/src/assets/favicon_io/site.webmanifest" />
+    
+    <meta name="generator" content={Astro.generator} />
+    <title>Pozvánka na svadbu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="overflow-x-hidden relative"
+    style={`background-image: url(${background.src}); background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed; background-image: url(${topBottom.src}), url(${background.src});`}
+  >
+    <Navbar />
+    <slot />
+  </body>
+  <Footer />
 </html>
+
+<script src="../scripts/burger-menu.js"></script>
+<script src="../scripts/timer.js"></script>
