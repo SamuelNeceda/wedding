@@ -2,20 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Parisienne-Regular";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("/fonts/Parisienne-Regular.ttf") format("truetype");
-}
-
+/* basic text */
 @font-face {
   font-family: "LibreBaskerville";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url("/fonts/LibreBaskerville-Regular.ttf") format("truetype");
+}
+
+/* our names */
+@font-face {
+  font-family: "BrittanySignature";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/BrittanySignature.ttf") format("truetype");
+}
+
+/* other title */
+@font-face {
+  font-family: "Parisienne-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/Parisienne-Regular.ttf") format("truetype");
 }
 
 html,
@@ -38,6 +49,11 @@ h6 {
 }
 
 .title {
+  @apply text-4xl xs:text-5xl s:text-6xl m:text-7xl l:text-8xl;
+}
+
+.brittany-signature {
+  font-family: "BrittanySignature", sans-serif;
   @apply text-4xl xs:text-5xl s:text-6xl m:text-7xl l:text-8xl;
 }
 
