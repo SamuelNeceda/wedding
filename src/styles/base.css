@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Parisienne-Regular";
+  font-family: "AlexBrush-Regular";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/fonts/Parisienne-Regular.ttf") format("truetype");
+  src: url("/fonts/AlexBrush-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -33,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Parisienne-Regular", sans-serif;
+  font-family: "AlexBrush-Regular", sans-serif;
   @apply py-10;
 }
 
