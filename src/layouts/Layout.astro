@@ -60,19 +60,19 @@ import Footer from "@components/Footer.astro";
         position: relative;
         background-image: url("/sparkles.png"), url("/background.svg");
 background-size: 100% auto, cover; /* Sparkles stretch across the width, main background fills the screen */
-        background-repeat: no-repeat, no-repeat;
+        background-repeat: repeat, no-repeat;
         background-position: center top, center; /* Sparkles are centered horizontally */
         background-attachment: fixed;
       }
 
       /* Media query for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   body {
     background-image: url('/sparkles.png'), url('/background.svg');
     background-size: 150% auto, cover; /* Zoom in on sparkles */
-    background-repeat: no-repeat, no-repeat; /* Prevent tiling */
-    background-position: centre top, center; /* Keep sparkles positioned as on laptops */
-    background-attachment: fixed; /* Enable scrolling for the background */
+    background-repeat: repeat, no-repeat; /* Prevent tiling */
+    background-position: center top, center; /* Keep sparkles positioned as on laptops */
+    background-attachment: scroll; /* Enable scrolling for the background */
   }
       }
     </style>
