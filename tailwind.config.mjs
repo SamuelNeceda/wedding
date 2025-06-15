@@ -16,7 +16,7 @@ export default {
     extend: {
       colors: {
         primary: "#10207A", // Dark blue
-        secondary: "#DBD2CB", // Light beige
+        secondary: "#10207A", // Light beige
         tertiary: "#DAD4D4", // Light gray
         dark: "#0A0A0A", // Black
         light: "#FBFBFB", // White
