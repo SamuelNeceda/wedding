@@ -24,7 +24,7 @@ export default {
         hoverGold: "#1E3A8A", // Darker gold for hover
       },
       fontFamily: {
-        BrittanySignature: ["BrittanySignature", "sans-serif"],
+        Parisienne-Regular: ["Parisienne-Regular", "sans-serif"],
       },
     },
   },

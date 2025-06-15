@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "BrittanySignature";
+  font-family: "Parisienne-Regular";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/fonts/BrittanySignature.ttf") format("truetype");
+  src: url("/fonts/Parisienne-Regular.ttf") format("truetype");
 }
 
 @font-face {
@@ -33,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "BrittanySignature", sans-serif;
+  font-family: "Parisienne-Regular", sans-serif;
   @apply py-10;
 }
 
@@ -90,7 +90,7 @@ h6,
 }
 
 .content {
-  @apply w-[90%] max-w-[90%] lg:w-[85%] xl:w-[80%] xl:max-w-[80%] mx-auto;
+  @apply w-[95%] max-w-[95%] lg:w-[95%] xl:w-[95%] xl:max-w-[95%] mx-auto;
 }
 
 .my-shadow {
