@@ -53,8 +53,8 @@ h6 {
 }
 
 .brittany-signature {
-  font-family: Parisienne-Regular,sans-serif;
-  font-size: 6rem;
+  font-family: Parisienne-Regular, sans-serif;
+  @apply text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl;
   line-height: 1.5em;
   padding: 1.5rem;
 }
