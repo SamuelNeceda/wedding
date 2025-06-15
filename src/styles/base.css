@@ -59,7 +59,8 @@ h4,
   @apply text-base xs:text-lg s:text-xl m:text-2xl l:text-3xl;
 }
 
-h5 {
+h5,
+.samo-text {
   @apply text-sm xs:text-base s:text-lg m:text-xl l:text-2xl;
 }
 
