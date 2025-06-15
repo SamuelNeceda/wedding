@@ -3,176 +3,184 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Parisienne-Regular';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url('/fonts/Parisienne-Regular.ttf') format('truetype');
+  font-family: "BrittanySignature";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/BrittanySignature.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'LibreBaskerville';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url('/fonts/LibreBaskerville-Regular.ttf') format('truetype');
+  font-family: "LibreBaskerville";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/LibreBaskerville-Regular.ttf") format("truetype");
 }
 
 html,
 body {
-    font-family: "LibreBaskerville", sans-serif;
-    font-weight: 400;
-    @apply text-primary;
-    scroll-behavior: smooth;
+  font-family: "LibreBaskerville", sans-serif;
+  font-weight: 400;
+  @apply text-primary;
+  scroll-behavior: smooth;
 }
 
-.title, h1, h2, h3, h4, h5, h6 {
-    font-family: 'Parisienne-Regular', sans-serif;
-    @apply py-10;
+.title,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "BrittanySignature", sans-serif;
+  @apply py-10;
 }
 
 .title {
-    @apply text-4xl xs:text-5xl s:text-6xl m:text-7xl l:text-8xl;
+  @apply text-5xl xs:text-6xl s:text-7xl m:text-8xl l:text-9xl;
 }
 
-h1, .big-text {
-    @apply text-2xl xs:text-3xl s:text-4xl m:text-5xl l:text-6xl;
+h1,
+.big-text {
+  @apply text-2xl xs:text-3xl s:text-4xl m:text-5xl l:text-6xl;
 }
 
 h2 {
-    @apply text-2xl s:text-3xl m:text-4xl l:text-5xl;
+  @apply text-2xl s:text-3xl m:text-4xl l:text-5xl;
 }
 
 h3 {
-    @apply text-lg xs:text-xl s:text-2xl m:text-3xl l:text-4xl;
+  @apply text-lg xs:text-xl s:text-2xl m:text-3xl l:text-4xl;
 }
 
-h4, .medium-text {
-    @apply text-base xs:text-lg s:text-xl m:text-2xl l:text-3xl;
+h4,
+.medium-text {
+  @apply text-base xs:text-lg s:text-xl m:text-2xl l:text-3xl;
 }
 
 h5 {
-    @apply text-sm xs:text-base s:text-lg m:text-xl l:text-2xl;
+  @apply text-sm xs:text-base s:text-lg m:text-xl l:text-2xl;
 }
 
-h6, .small-text {
-    @apply text-xs xs:text-sm s:text-base m:text-lg l:text-xl;
+h6,
+.small-text {
+  @apply text-xs xs:text-sm s:text-base m:text-lg l:text-xl;
 }
 
 @layer utilities {
-    /* Firefox */
-    * {
-        scrollbar-width: thin;
-        scrollbar-color: #10207A transparent;
-    }
-    /* Chrome, Edge, and Safari */
-    *::-webkit-scrollbar {
-        width: 7px;
-    }
-    *::-webkit-scrollbar-track {
-        background: transparent;
-        border-radius: 5px;
-    }
-    *::-webkit-scrollbar-thumb {
-        background-color: #10207A;
-        border-radius: 14px;
-        border: 3px solid transparent;
-    }
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #10207a transparent;
+  }
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 7px;
+  }
+  *::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 5px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: #10207a;
+    border-radius: 14px;
+    border: 3px solid transparent;
+  }
 }
 
 .content {
-    @apply w-[90%] max-w-[90%] lg:w-[85%] xl:w-[80%] xl:max-w-[80%] mx-auto;
+  @apply w-[90%] max-w-[90%] lg:w-[85%] xl:w-[80%] xl:max-w-[80%] mx-auto;
 }
 
 .my-shadow {
-    /* box-shadow: rgba(14, 25, 78, 0.2) 0px 12px 28px 0px, rgba(14, 25, 78, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  /* box-shadow: rgba(14, 25, 78, 0.2) 0px 12px 28px 0px, rgba(14, 25, 78, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
   box-shadow: rgba(14, 25, 78, 0.15) 0px 15px 25px, rgba(14, 25, 78, 0.05) 0px 5px 10px;*/
-    box-shadow: rgba(14, 25, 78, 0.1) 0px 4px 16px,
-        rgba(14, 25, 78, 0.1) 0px 8px 24px, rgba(14, 25, 78, 0.1) 0px 16px 56px;
+  box-shadow: rgba(14, 25, 78, 0.1) 0px 4px 16px,
+    rgba(14, 25, 78, 0.1) 0px 8px 24px, rgba(14, 25, 78, 0.1) 0px 16px 56px;
 }
 
 .full-screen {
-    @apply w-full h-screen;
+  @apply w-full h-screen;
 }
 
 button,
 a,
 .smooth-show {
-    transition: 0.5s;
-    cursor: pointer;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .btn-primary {
-    @apply bg-primary text-light px-9 py-3 rounded-full hover:bg-hoverGold hover:text-light font-semibold;
+  @apply bg-primary text-light px-9 py-3 rounded-full hover:bg-hoverGold hover:text-light font-semibold;
 }
 
 /*Nav animations
 --------------------------------------------------*/
 
 .animated-underline {
-    display: inline-block;
-    text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .animated-underline::after {
-    display: block;
-    content: '';
-    @apply border-b-2 border-primary;
-    border-radius: 5px;
-    transform: scaleX(0);
-    transition: transform 250ms ease-in-out;
+  display: block;
+  content: "";
+  @apply border-b-2 border-primary;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 
 .animated-underline:hover::after {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
-
 
 /* Hamburger Menu */
 
 .hamburger {
-    cursor: pointer;
-    width: 24px;
-    height: 24px;
-    transition: all 0.25s;
-    position: relative;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
 }
 
 .hamburger-top,
 .hamburger-middle,
 .hamburger-bottom {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 24px;
-    height: 3px;
-    background: black;
-    transform: rotate(0);
-    transition: all 0.5s;
-    border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 3px;
+  background: black;
+  transform: rotate(0);
+  transition: all 0.5s;
+  border-radius: 5px;
 }
 
 .hamburger-middle {
-    transform: translateY(7px);
+  transform: translateY(7px);
 }
 
 .hamburger-bottom {
-    transform: translateY(14px);
+  transform: translateY(14px);
 }
 
 .open {
-    transform: rotate(90deg);
-    transform: translateY(0px);
+  transform: rotate(90deg);
+  transform: translateY(0px);
 }
 
 .open .hamburger-top {
-    transform: rotate(45deg) translateY(6px) translate(6px);
+  transform: rotate(45deg) translateY(6px) translate(6px);
 }
 
 .open .hamburger-middle {
-    display: none;
+  display: none;
 }
 
 .open .hamburger-bottom {
-    transform: rotate(-45deg) translateY(6px) translate(-6px);
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
