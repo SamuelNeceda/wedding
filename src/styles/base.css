@@ -90,7 +90,7 @@ h6,
 }
 
 .content {
-  @apply w-[90%] max-w-[90%] lg:w-[90%] xl:w-[90%] xl:max-w-[80%] mx-auto;
+  @apply w-[95%] max-w-[95%] lg:w-[95%] xl:w-[95%] xl:max-w-[95%] mx-auto;
 }
 
 .my-shadow {
