@@ -1,52 +1,95 @@
 <nav class="z-50">
-    <div class="w-full bg-white shadow-md" id="navbar">
-        <div class="max-w-[90%] mx-auto flex flex-row justify-between items-stretch">
-            <!-- Logo -->
-            <div class="self-center">
-                <a href="/" class="outline-none p-0 w-24 font-bold" aria-label="navigate to home">
-                    <img
-                        src="/logojs_trans.png"
-                        alt="J & S Logo"
-                        class="w-20 my-4 h-auto"
-                    />
-                </a>
-            </div>
-            <!-- Menu Items -->
-            <div class="hidden space-x-6 self-center text-sm font-medium md:flex">
-                <a href="#program" class="animated-underline self-center" aria-label="navigate to program button">
-                    Program
-                </a>
-                <a href="#park" class="animated-underline self-center" aria-label="navigate to park me button">
-                    Doprava a parkovanie
-                </a>
-                <a href="#gifts" class="animated-underline self-center" aria-label="navigate to gifts button">
-                    Darčeky
-                </a>
-                <a href="https://forms.gle/M5jYPJrawmnW4wzZ8" target="_blank" class="btn-primary self-center" aria-label="navigate to rsvp form button">
-                    RSVP
-                </a>
-            </div>
+  <div class="w-full bg-white shadow-md" id="navbar">
+    <div
+      class="max-w-[90%] mx-auto flex flex-row justify-between items-stretch"
+    >
+      <!-- Logo -->
+      <div class="self-center">
+        <a
+          href="/"
+          class="outline-none p-0 w-24 font-bold"
+          aria-label="navigate to home"
+        >
+          <img
+            src="/logojs_trans.png"
+            alt="J & S Logo"
+            class="w-20 my-4 h-auto"
+          />
+        </a>
+      </div>
+      <!-- Menu Items -->
+      <div class="hidden space-x-6 self-center text-sm font-medium md:flex">
+        <a
+          href="#program"
+          class="animated-underline self-center"
+          aria-label="navigate to program button"
+        >
+          Program
+        </a>
+        <a
+          href="#park"
+          class="animated-underline self-center"
+          aria-label="navigate to park me button"
+        >
+          Doprava
+        </a>
+        <a
+          href="#gifts"
+          class="animated-underline self-center"
+          aria-label="navigate to gifts button"
+        >
+          Darčeky
+        </a>
+        <a
+          href="https://forms.gle/qHrfXrf8SZ1P5gGP6"
+          target="_blank"
+          class="btn-primary self-center"
+          aria-label="navigate to rsvp form button"
+        >
+          Dotazník
+        </a>
+      </div>
 
-            <!-- Hamburger Icon -->
-            <button id="menu-btn" class="block hamburger self-center md:hidden focus:outline-none" aria-label="toggle mobile menu button">
-                <span class="hamburger-top"></span>
-                <span class="hamburger-middle"></span>
-                <span class="hamburger-bottom"></span>
-            </button>
-        </div>
+      <!-- Hamburger Icon -->
+      <button
+        id="menu-btn"
+        class="block hamburger self-center md:hidden focus:outline-none"
+        aria-label="toggle mobile menu button"
+      >
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
     </div>
+  </div>
 </nav>
 
 <div id="menu" class="full-screen hidden z-50 fixed backdrop-blur-sm mt-8">
-    <div class="font-semibold tracking-widest bg-white">
-        <div class="flex flex-col max-w-[90%] mx-auto">
-            <button id="program-btn" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4" aria-label="navigate to program button">Program</button>
-            <hr class="w-full border-0 border-b border-gray-500">
-            <button id="park-btn" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4" aria-label="navigate to park me button">Doprava a parkovanie</button>
-            <hr class="w-full border-0 border-b border-gray-500">
-            <button id="gifts-btn" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4" aria-label="navigate to gifts button">Darčeky a kvety</button>
-            <hr class="w-full border-0 border-b border-gray-500">
-            <button id="rsvp-btn" class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4" aria-label="navigate to gifts button">RSVP</button>
-        </div>
+  <div class="font-semibold tracking-widest bg-white">
+    <div class="flex flex-col max-w-[90%] mx-auto">
+      <button
+        id="program-btn"
+        class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4"
+        aria-label="navigate to program button">Program</button
+      >
+      <hr class="w-full border-0 border-b border-gray-500" />
+      <button
+        id="park-btn"
+        class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4"
+        aria-label="navigate to park me button">Doprava</button
+      >
+      <hr class="w-full border-0 border-b border-gray-500" />
+      <button
+        id="gifts-btn"
+        class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4"
+        aria-label="navigate to gifts button">Darčeky a kvety</button
+      >
+      <hr class="w-full border-0 border-b border-gray-500" />
+      <button
+        id="rsvp-btn"
+        class="w-[95%] mx-auto outline-none border-0 text-right px-2 py-4"
+        aria-label="navigate to gifts button">Dotazník</button
+      >
     </div>
+  </div>
 </div>
