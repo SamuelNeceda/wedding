@@ -31,6 +31,6 @@ document.getElementById('gifts-btn').addEventListener('click', () => {
     scrollToSection("#gifts");
 })
 
-document.getElementById('rsvp-btn').addEventListener('click', () => {
-    scrollToSection("#rsvp");
-})
+// document.getElementById('rsvp-btn').addEventListener('click', () => {
+//     scrollToSection("#rsvp");
+// })
